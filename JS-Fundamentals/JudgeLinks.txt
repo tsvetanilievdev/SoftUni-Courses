@@ -1,1 +1,2 @@
+1. BASIC SYNTAX, CONDITIONAL STATEMENTS AND LOOPS - https://judge.softuni.bg/Contests/1189
 2. DATA TYPES AND VARIABLES - https://judge.softuni.bg/Contests/1242
