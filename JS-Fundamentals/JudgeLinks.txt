@@ -2,3 +2,4 @@
 1.2 BASIC SYNTAX, CONDITIONAL STATEMENTS AND LOOPS - EXERCISE - https://judge.softuni.bg/Contests/1207
 2.1 DATA TYPES AND VARIABLES - LAB - https://judge.softuni.bg/Contests/1242
 2.2 DATA TYPES AND VARIABLES - EXERCISE - https://judge.softuni.bg/Contests/Practice/Index/1229
+3.1 ARRAYS - LAB - https://judge.softuni.bg/Contests/Practice/Index/1243
