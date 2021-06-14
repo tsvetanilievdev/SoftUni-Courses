@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facilis.</p>
+    </div>
+
+    <div>
+        <ul id="ul-element">
+            <li>one</li>
+            <li id="li-two">two</li>
+            <li>three</li>
+        </ul>
+    </div>
+    <script>
+        let ul = document.getElementById('ul-element');
+        let liTwo = document.getElementById('li-two');
+
+        ul.addEventListener('click', ulFunc, true);
+        liTwo.addEventListener('click', liFunc)
+
+        function ulFunc() {
+            console.log('this is UL');
+        }
+
+        function liFunc() {
+            console.log('this is TWOOOO');
+        }
+    </script>
+</body>
+
+</html>
