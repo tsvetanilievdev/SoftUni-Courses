@@ -1,0 +1,11 @@
+.hide{
+    display: none;
+}
+#register-form {
+    background-color: aqua;
+    margin-bottom: 300px;
+}
+
+#login-form {
+    background-color: azure;
+}

@@ -1,0 +1,48 @@
+
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#register-div {
+  border: solid 2px green;
+  height: 400px;
+  width: 600px;
+  padding: 25px;
+  background-color: aquamarine;
+}
+
+#login-div {
+  border: solid 2px rgb(145, 14, 14);
+  height: 340px;
+  width: 600px;
+  padding: 25px;
+  background-color: rgb(238, 149, 167);
+}
+
+#btn-register {
+  margin-top: 20px;
+}
+#btn-login {
+  margin-top: 20px;
+}
+#reg-info,
+#log-info {
+  position: absolute;
+}
+.hide {
+  display: none;
+}
+
+a {
+color: teal;
+  border-style: double;
+  border-width: 2px;
+  padding: 10px;
+}
+a:hover {
+    background-color: yellow;
+    
+}

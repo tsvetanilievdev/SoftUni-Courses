@@ -1,0 +1,7 @@
+- CSS Specificity!
+
+- След завършването на курса, -> css tricks grid --> transition and animation --> sass/less --> css architecture(itcss), bem, css modules, styled components
+
+- resources - Frontend Masters
+
+1:18 vtora chast

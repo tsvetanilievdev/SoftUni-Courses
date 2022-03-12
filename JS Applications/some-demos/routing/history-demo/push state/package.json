@@ -1,0 +1,14 @@
+{
+  "name": "push-state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server --proxy http://localhost:8080?"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.0.0"
+  }
+}

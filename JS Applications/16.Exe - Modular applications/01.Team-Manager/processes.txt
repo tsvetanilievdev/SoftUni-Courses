@@ -1,0 +1,10 @@
+1.Extract project skeleton and examine files
+2.Setup NPM project
+3.Analyze the HTML and determine templates
+4.Configure routing with placeholder modules
+5.Implement specific requests
+6.Implement each view 
+6.1 Create static template
+6.2 Implement fetch requests(if any)
+6.3 Add parameters to template(if any) - няма да е статичен, данните ще идват от заявката
+6.4 Add event listeners(if any)

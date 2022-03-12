@@ -1,0 +1,99 @@
+- an object is a collection of fields, called properties; 
+
+- key - value
+- REFERENCE DATA TYPE
+
+- object literal:
+const person = {
+	firstName: 'Ivan',
+	lastName: 'Ivanov,
+	age:20
+}
+
+- properties are as ordinary variables, can hold any data type and be reassigned;
+
+assigning properties:
+
+accessing property:
+	console.log(person.firstName) --> Ivan;
+	console.log(person['firstName']) --> Ivan;
+	const propName = 'age';
+	console.log(person[propName]) --> 20;
+
+reassign property:
+	person.firstName = 'Georgi';
+	console.log(person.firstName) --> Georgi;
+
+adding new property:
+	person.nationality = 'BG'
+	person.['address'] = 'Targovishte';
+	
+destructuring object: creating copy, not the same reference
+	const {age, firstName, lastName: familyName} = person; --> the variable(age or firstName) must be the same as the key of property in the object!!!! lastName will be assigned in familyName variable;
+	
+Object as Associative Array:
+
+FOR IN ---> for(const KEY in OBJ) 
+
+Object.keys --> return array of all keys
+Object.values --> return array of all values
+Object.entries --> return array of tuples of every property [[key1, value1],[key2, value2]...]
+
+check property is already assigned:
+if(person.firstName == undefined)
+if(typeof person.firstName == 'undefined')
+if(person.firstName)
+person.hasOwnProperty('firstName') --> true;
+
+
+Object METHODS
+- are actions thah can be performed on objects;
+- are stored as properties as FUNCTION definitions;
+const player = {
+	firstName: 'Peter',
+	lastName: 'Ivanov,
+	age:20,
+	sayHello: function (message) {
+		return `${message} from ${this.firstName}`
+	}
+}
+
+	player.sayHello('Hi to all') --> Hi to all from Peter;
+
+Objects as function libraries:
+
+const compareNumbers = {
+	ascending: (a,b) => a - b, 
+}
+
+
+Object as switch replacement:
+let count = 5;
+const parse = {
+    inc() {count++},
+    dec() {count--},
+    reset() {count = 0}
+}
+	parse.inc()
+	count --> 6
+	
+
+Accesing object CONTEXT:
+- functions in JS have execution context
+- accessed with the keyword  --->this<--
+- when executed as an object method, the context is a reference to the PARENT object:
+
+const player = {
+	firstName: 'Peter',
+	lastName: 'Ivanov,
+	age:20,
+	sayHello: function (message) {
+		return `${message} from ${this.firstName}`
+	},
+	sayMyAge: () => `${this.firstName} is ${age} years old!`
+}
+	player.sayHello('Hi to all') --> Hi to all from Peter;
+
+- ARROW FUNCTIONS always refer to GLOBAL SCOPE
+
+person.sayMyAge() --> undefined is undefined years old!

@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+    list-style: none;
+}
+
+#register-container, #login-container, #create-container, #edit-container {
+    margin: 30px;
+    width: 400px;
+}
+
+#hello-msg {
+    position:relative;
+    padding-right:500px;
+}

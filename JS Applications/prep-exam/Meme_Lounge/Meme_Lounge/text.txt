@@ -1,0 +1,17 @@
+SPA
+1. User login, register, logout
+2. Main collection -> CRUD -> Create, Read, Updata, Delete
+3. Catalog
+4. Details
+
+Tasks:
+1.Extract project skeleton and examine files
+2.Setup NPM project (package.json + libraries)
+3.Analyze HTML and determine templetes
+4.Configure routing with placeholder modules
+5.Implement requests
+6.Implement each view
+6.1 Create static template
+6.2 Implement fetch requests
+6.3 Add parameters to templete
+6.4 Add event listeners (if any)

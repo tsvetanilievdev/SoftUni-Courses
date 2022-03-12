@@ -1,0 +1,23 @@
+
+body {
+    background-color: wheat;
+}
+#wrapper {
+    text-align: center;
+    width: 980px;
+    margin: auto;
+    font-size: 24px;
+    border: solid 2px brown;
+    background-color: rgb(223, 231, 231);
+}
+
+#products {
+   margin: 100px;
+   border: solid green 1px;
+   padding: 25px;
+   text-align: '';
+   background-color: turquoise;
+}
+img {
+    width: 160px;
+}

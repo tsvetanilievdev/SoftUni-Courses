@@ -1,0 +1,14 @@
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+
+#view {
+    display: none;
+}
+div {
+    /* margin: 10px; */
+    padding: 10px;
+}

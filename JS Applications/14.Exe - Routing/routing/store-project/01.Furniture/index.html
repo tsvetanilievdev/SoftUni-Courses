@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- без . заради nested линковете напр. detalis/:id. няма да работи, защото с точка означава релативен път -->
+    <script type="module" src="/app.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/notification.css">
+    <title>Furniture Store</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Furniture Store</a></h1>
+        <nav>
+            <a id="catalogLink" href="/dashboard" class="active">Dashboard</a>
+            <div id="user">
+                <a id="createLink" href="/create">Create Furniture</a>
+                <a id="profileLink" href="/my-furniture">My furniture</a>
+                <!-- "javascript:void(0)" защото logout не е страница, а е ДЕЙСТВИЕ, но трябва да се сложи event listener -->
+                <a id="logoutBtn" href="javascript:void(0)">Logout</a>
+            </div>
+            <div id="guest">
+                <a id="loginLink" href="/login">Login</a>
+                <a id="registerLink" href="/register">Register</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+
+    </div>
+    <section id="notification">
+        Hello World!
+    </section>
+</body>
+
+</html>

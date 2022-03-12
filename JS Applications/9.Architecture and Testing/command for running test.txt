@@ -1,0 +1,5 @@
+В package.json ---> "test": "mocha
+
+Пишем в конзолата:
+ --- npm test file.js - за отделен файл - името на файла е 'file.js'
+ --- npm test tests - за папка - името на папката е 'tests'

@@ -1,0 +1,26 @@
+1.template(onSubmit, errMsg = '', errors)  --- errors = {email: true, password: false, ....}
+
+2.0 ${errMsg - adding message 
+    ? html`<p class="error">${errMsg}</p>` 
+    : ''} 
+
+2.1 <input name="email" class=${'some-class' + (errors.email ? ' is-invalid' : ' is-valid')}> - adding class for invalid or valid input
+
+3. try{
+    if(email == '' || password == ''){
+        throw {
+            error: 'All fields are required!',
+            errors: {
+                email: email == '',
+                password: password == '',
+            }
+        }
+    }
+
+    await login()
+    context.updateUserNav();
+    page.redirect('/');
+} catch(err){
+    const errorMsg = err.message || err.error.message;
+    context.render(template(onSubmit, errorMsg, err.errors(може да го има, може и да го няма, както и errorMsg) || {}))
+}

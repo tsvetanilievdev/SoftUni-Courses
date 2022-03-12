@@ -1,0 +1,31 @@
+{	"133e1db4-5ae7-4d30-8bb8-fbd6cfe13903":{
+	"_id": "100e1db4-5ae7-4d30-8bb8-fbd6cfe13903",
+	"text": "Make your bed first",
+	"isDone": true
+	},
+	"d6e633c4-13a4-426a-aa1d-d43d432421c2":{
+	"_id": "d6e649c4-13a4-426a-aa1d-d43d432421c2",
+	"text": "Do your homework",
+	"isDone": false
+	},
+	"7ab57cf4-173b-4457-a4c5-b1a9a6c14108": {
+	"_id": 	"7ab57cf4-173b-4457-a4c5-b1a9a6c14108",
+	"text": "Learn React",
+	"isDone": true
+	},
+	"afc51396-83af-423b-bf59-f963ce9cb2af":{
+	"_id": "afc51396-83af-423b-bf59-f963ce9cb2af",
+	"text": "Try some code",
+	"isDone": true
+	},
+	"eb1eb4aa-fe10-43ae-b4cc-65f53c48222a":{
+	"_id": "eb1eb4aa-fe10-43ae-b4cc-65f53c48222a",
+	"text": "Go to Gym",
+	"isDone": false
+	},
+	"1bccfaca-144e-4709-a20e-63fe086689ad":{
+	"_id": "1bccfaca-144e-4709-a20e-63fe086689ad",
+	"text": "Buy some furtinure",
+	"isDone": true
+	}
+}

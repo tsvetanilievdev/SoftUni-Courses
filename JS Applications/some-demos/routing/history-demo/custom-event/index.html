@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HashChange</title>
+</head>
+
+<body>
+    <h1>History based router - custom event</h1>
+    <header>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/catalog">Catalog</a>
+            <a href="/about">About Us</a>
+        </nav>
+    </header>
+    <main id="main">
+
+    </main>
+
+    <script>
+        const views = {
+            '/home': () => `<h2>Welcome Home</h2><p>Hash Change Event information</p>`,
+            '/catalog': () => '<h3>Catalog</h3><ul><li>Shoes</li><li>Tracksuit</li><li>T-shirt</li></ul>',
+            '/about': () => '<h4>Contact us on 0888 642621</h4>',
+        };
+
+        updateContent(location.pathname == '/' ? '/home' : location.pathname)
+
+        document.body.addEventListener('click', (e) => {
+            if (e.target.tagName == 'A') {
+                e.preventDefault();
+                navigate(e.target.href)
+            }
+        })
+
+        window.addEventListener('popstate', (e) => {
+            updateContent(location.pathname)
+        })
+
+        function navigate(url) {
+            history.pushState({}, '', url)
+
+            // create custom event to trigger popstate event
+            let newPopStateEvent = new PopStateEvent('popstate');
+            dispatchEvent(newPopStateEvent);
+        }
+
+        function updateContent(pathname){
+            const view = views[pathname];
+            if (typeof view == 'function') {
+                document.querySelector('main').innerHTML = view();
+            } else {
+                document.querySelector('main').innerHTML = '<h2>Error! 404!</h2>'
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

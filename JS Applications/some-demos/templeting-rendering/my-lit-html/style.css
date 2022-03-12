@@ -1,0 +1,12 @@
+.player {
+    padding: 15px;
+    margin: 15px;
+}
+
+div {
+    display: inline-block;
+}
+img {
+    height: 144px;
+    width: 256px;
+}
