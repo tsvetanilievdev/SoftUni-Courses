@@ -1,0 +1,24 @@
+What is HTML?
+    - Markup language for describing web pages
+    - A markup language is a set of markup tags
+    - HTML documents contain HTML tags and plain text
+    - The tags describe document content
+
+HTML Tags
+    - Keywords surrounded by angle brackets
+    - Normally come in pairs
+
+<html>
+    <head>
+        <title>Simple HTML document example</title>
+    </head>
+    <body>
+        <h1>Simple HTML document example</h1>
+    </body>
+</html>
+
+
+
+
+
+Semantic Tags, Document Structure
