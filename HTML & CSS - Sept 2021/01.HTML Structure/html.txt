@@ -17,8 +17,64 @@ HTML Tags
     </body>
 </html>
 
-
-
-
-
 Semantic Tags, Document Structure
+
+What is Semantic HTML? 
+	- семантичните елементи имат стойност за браузъра, напримен когато браузъра срещне <p> очаква да види текст 
+	- Semantic element clearly describes its meaning to both the browser and the developer:
+		<p>Some random text...</p> - Indicates that the enclosed text is a paragraph
+	- This is both semantic and presentational - People know what paragraphs are and browsers know how to display them
+		<footer>Copywrite 2022</footer> - This holds a footer
+
+The Importance of Semantic HTML:
+	- Provides an additional information about that document, which aids in communication
+	- Semantic tags make it clear to the browser what the meaning of a page and its content is
+		- This clarity is also communicated with search engines
+
+HTML Semantic Tags
+    - Tрите основни, които разделят нашата страница <header>(начало-лого, заглавие, навигация), <main>(основно съдържание) и <footer>(допълнителна информация)
+
+    - <header></header> - Represents introductory content
+        It may contain:
+            - headings
+            - logo
+            - search form
+        <header>
+            <h1>Welcome to SoftUni!</h1>
+        </header>
+    
+    - <nav></nav> - Defines a set of navigation links, ПОЧТИ ВИНАГИ се слага вътре във <header>
+        <nav id="topmenu">
+            <ul> - добра практика е да си прави лист с линкове в <li>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Menu">Menu</a></li>
+                <li><a href="/Courses">Courses</a></li>
+            </ul>
+        </nav>
+
+    - <main></main> 
+        - The main content of a document 
+        - Helps crawlers
+        - There must not be more than one <main> element in a document
+        - Wrap the most important information in the body
+
+    - <aside></aside> - Defines a sidebar (left / right navigation), да не се прави с div, а да се използва aside; ако има връзка със съдържанието се поставя в main, ако няма извън main;
+        <aside>
+            <h2>Blogroll</h2>
+            <ul>
+                <li><a href="#">My Friend</a></li>
+                <li><a href="#">Other Friend</a></li>
+                <li><a href="#">Best Friend</a></li>
+            </ul>
+        </aside>
+
+    - <footer></footer> - A document / section footer, contains information about:
+        - Navigation links
+        - Copyright data
+            <footer>
+                <p>Posted by: Hege Refsnes</p>
+                    <p><a href="someone@exam.uk">Contact...</a></p>
+                <p>&copy;copyright</p>
+            </footer>
+
+

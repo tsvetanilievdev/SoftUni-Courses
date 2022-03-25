@@ -1,0 +1,38 @@
+header {
+    background-color: rgb(13, 81, 104);
+}
+main {
+    background-color: lightgreen;
+}
+footer {
+    background-color: lightcoral;
+}
+.mainNavigation {
+    display: inline-block;
+}
+
+.mainNavigation ul{
+    list-style: none;
+}
+
+.mainNavigation li{
+    display: inline;
+    margin: 10px;
+}
+.mainNavigation a {
+    color: white;
+}
+
+aside {
+    background-color: blueviolet;
+    display: inline-block;
+    width: 20%;
+}
+section {
+    background-color: azure;
+}
+
+section.firstSection {
+    display: inline-block;
+    width: 79%;
+}
