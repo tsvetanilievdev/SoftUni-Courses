@@ -1,0 +1,116 @@
+HTML - HyperText Markup Language
+ - is a markup language that tells web browsers how to structure the web pages you visit. 
+ - HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way.
+
+Anatomy of HTML ELEMENT
+ - In HTML, a tag is used for creating an element.
+
+<h1>Anatomy of HTML Tag/Element</h1>
+---  ----------------   ---
+  |          ↓           |
+  |     <<content>>      |
+  ↓                      ↓
+start                   end
+ tag                    tag
+
+          HTML
+       attribute
+           ↑
+           |
+        -------
+    <hr size="3"> - horizontal line tag - self-closing
+    ---
+     |
+     ↓
+    HTML
+   element
+
+
+ Self-closing tags or EMPTY ELEMENTS
+ - Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document
+ 
+ - NEW LINE - <br>  
+ - IMAGE - <img href="..." alt="...">
+ - LINK - <a href="destination.."> Name of link</a>
+
+ - TABLE
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td>Ivan</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Georgi</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+BLOCK versus INLINE elements
+- Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. 
+Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page.
+For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.
+- Inline elements are contained within block-level elements, and surround only small parts of the document's content (not entire paragraphs or groupings of content). 
+An inline element will not cause a new line to appear in the document. It is typically used with text, for example an <a> element creates a hyperlink, and elements such as <em> or <strong> create emph
+
+
+ATTRIBUTES
+- An attribute should have:
+  - A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)
+  - The attribute name, followed by an equal sign.
+  - An attribute value, wrapped with opening and closing quote marks.
+- Boolean attributes - Sometimes you will see attributes written without values.Boolean attributes can only have one value, which is generally the same as the attribute name.
+<input type="text" disabled> === <input type="text" disabled="disabled">
+
+
+HTML text fundamentals
+- In HTML, each paragraph has to be wrapped in a <p> element, like so:
+<p>I am a paragraph, oh yes I am.</p>
+- Each heading has to be wrapped in a heading element: h1 to h6
+<h1>I am the title of the story.</h1>
+
+Why do we need semantics?
+Semantics are relied on everywhere around us—we rely on previous experience to tell us what the function of an everyday object is; when we see something, we know what its function will be. So, for example, we expect a red traffic light to mean "stop," and a green traffic light to mean "go." Things can get tricky very quickly if the wrong semantics are applied.
+In a similar vein, we need to make sure we are using the correct elements, giving our content the correct meaning, function, or appearance. In this context, the <h1> element is also a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page."
+By default, the browser will give it a large font size to make it look like a heading  - <h1>I am the title of the story.</h1> (although you could style it to look like anything you wanted using CSS)
+
+This is a <span> element. It has no semantics. You use it to wrap content when you want to apply CSS to it (or do something to it with JavaScript) without giving it any extra meaning.
+<span style="font-size: 32px; margin: 21px 0; display: block;">Is this a top level heading?</span>
+
+HTML LAYOUT ELEMENTS in more detail - more in https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+ - <main> is for content unique to this page. Use <main> only once per page, and put it directly inside <body>. Ideally this shouldn't be nested within other elements.
+ - <article> encloses a block of related content that makes sense on its own without the rest of the page (e.g., a single blog post).
+ - <section> is similar to <article>, but it is more for grouping together a single part of the page that constitutes one single piece of functionality (e.g., a mini map, or a set of article headlines and summaries), or a theme. 
+It's considered best practice to begin each section with a heading; also note that you can break <article>s up into different <section>s, or <section>s up into different <article>s, depending on the context.
+ - <aside> contains content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries, author biography, related links, etc.).
+ - <header> represents a group of introductory content. If it is a child of <body> it defines the global header of a webpage, but if it's a child of an <article> or <section> it defines a specific header for that section (try not to confuse this with titles and headings).
+ - <nav> contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.
+ - <footer> represents a group of end content for a page.
+
+NON-SEMANTIC wrappers - <div> and <span> - Sometimes you'll come across a situation where you can't find an ideal semantic element to group some items together or wrap some content. 
+Sometimes you might want to just group a set of elements together to affect them all as a single entity with some CSS or JavaScript. 
+You should use these preferably with a suitable class attribute, to provide some kind of label for them so they can be easily targeted.
+
+ - <span> is an INLINE non-semantic element, which you should only use if you can't think of a better semantic text element to wrap your content, or don't want to add any specific meaning.
+<p>The King walked drunkenly back to his room at 01:00, the beer doing nothing to aid him as he staggered through the door <span class="editor-note">[Editor's note: At this point in the play, the lights should be down low]</span>.</p>
+
+ - <div> is a BLOCK level non-semantic element, which you should only use if you can't think of a better semantic block element to use, or don't want to add any specific meaning. For example, imagine a shopping cart widget that you could choose to pull up at any point during your time on an e-commerce site:
+ <div class="shopping-cart">
+  <h2>Shopping cart</h2>
+  <ul>
+    <li>
+      <p><a href=""><strong>Silver earrings</strong></a>: $99.95.</p>
+      <img src="../products/3333-0985/thumb.png" alt="Silver earrings">
+    </li>
+    <li>
+      ...
+    </li>
+  </ul>
+  <p>Total cost: $237.89</p>
+</div>
+
+
+Planning - https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#planning_a_simple_website

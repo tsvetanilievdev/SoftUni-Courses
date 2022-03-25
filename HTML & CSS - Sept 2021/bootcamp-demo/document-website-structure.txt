@@ -1,0 +1,33 @@
+HTML also boasts a number of block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column"). 
+We will see how to plan a basic website structure, and write the HTML to represent this structure.
+
+Basic sections of a document - Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
+
+ - HEADER:
+Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.
+
+ - NAVIGATION BAR:
+Links to the site's main sections; usually represented by menu buttons, links, or tabs. 
+Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. 
+Many web designers consider the navigation bar to be PART OF THE HEADER rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.
+
+ - MAIN CONTENT:
+A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. 
+This is the one part of the website that definitely will vary from page to page!
+
+ - SIDEBAR:
+Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, 
+or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.
+
+ - FOOTER:
+ A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. 
+ The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content.
+
+ To implement such semantic mark up, HTML provides dedicated tags that you can use to represent such sections, for example:
+    - header: <header>.
+    - navigation bar: <nav>.
+    - main content: <main>, with various content subsections represented by <article>, <section>, and <div> elements.
+    - sidebar: <aside>; often placed inside <main>.
+    - footer: <footer>.
+
+Planning - https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#planning_a_simple_website
