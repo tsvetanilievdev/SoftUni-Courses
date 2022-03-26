@@ -1,0 +1,8 @@
+label {
+    display: block;
+    margin: 3px;
+}
+
+label input {
+    width: 150px;
+}

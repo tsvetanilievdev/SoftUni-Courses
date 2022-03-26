@@ -1,0 +1,120 @@
+Collect User Input - FORMS
+
+The HTML form - a document section
+    - Contains interactive controls for submitting information
+    - Takes input from the site visitor and posts it
+
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <input type="submit" value="Submit">
+</form>
+
+Form Attributes
+- action - used to specify where the form data is to be sent to the server after submission of the form
+- method - The HTTP method that the browser uses to submit the form:
+    - POST - Corresponds to HTTP POST 
+    - methodGET - Corresponds to HTTP GET
+<form action="/action_page.php" method="get">
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="male" value="Gender">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="female" value="Gender">
+</form>
+
+
+
+
+Form Elements – Input - по програмен начин да вземем стойността на дадено инпут поле се използва .value -> document.querySelector('input').value
+ - <input> element is the most important form element, it can be displayed in several ways, depending on the type attribute:
+    - <input type="text">
+    - <input type="number">
+    - <input type="password">
+    - <input type="email"> - Има валидация
+    - <input type="search">
+    - <input type="checkbox">
+    - <input type="radio"> - за да два radio бутона да са свързани, стойността на атрибута name="..." трябва да е една и съща и при двата!
+    - <input type="range">
+    - <input type="submit">
+    - <input type="button">
+    - <input type="file">
+    - <input type="button">
+    - <input type="submit" value="Send"> 
+
+Form Elements – Input Attributes
+    - value - specifies the initial value for an input field
+    - name - specifies the name of the input element
+    - placeholder - specifies a hint that describes the expected value of the input field, примерна стойност, която при цъкане върху Input изчезва
+    - required - the field must be filled out before submitting the form
+    - autofocus - the input should automatically get focus when the page load
+    - disabled - specifies that the input field is disabled
+    - min and max - specify the minimum and maximum values
+
+HTML Validation:
+    - HTML input validation is done automatically by the browser based on special attributes
+    - The validation only occurs when attempting to submit the form
+    - Inputs which are disabled or read-only will not trigger validation
+
+Form Elements – Label
+    - <label> - defines a label for the others forms elements
+    - The for attribute should be equal to the id attribute of the related element to bind them together
+        <form>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        </form>
+
+
+<label> - означаваме какъв е нашият input, за какво се отнася той;
+<input placeholder="...."> - докато placeholder, даваме пример в полето какво трябва да бъде въведено, когато се цъкне върху input то изчезва!
+
+
+
+Form Elements – Fieldset
+    - <fieldset> - used to group related data in a form
+    - <legend> - defines a caption for the <fieldset> element
+        <form>
+            <fieldset>
+                <legend>Customer Details</legend>
+                <input type="text" name="fName" />
+                <input type="text" name="lName" />
+            </fieldset>
+            <fieldset>
+                <legend>Order Details</legend>
+                <input type="text" name="quantity" />
+                <textarea name="remarks"></textarea>
+            </fieldset>
+        </form>
+
+
+Form Elements – Select
+    - <select> - defines a drop-down list
+    - <option> - defines an option that can be selected
+        <form>
+            <label for="colors">Choose a color:</label>
+            <select id="colors" name="colors">
+                <option value="volvo">Red</option>
+                <option value="saab">Black</option>
+                <option value="fiat">White</option>
+            </select>
+        </form>
+
+
+Form Elements – Textarea
+    - <textarea> - defines a multi-line input field
+    - Attributes:
+        - rows - specifies the visible number of lines in a text area
+        - cols - specifies the visible width of a text area
+    <textarea rows="10" cols="30">
+       The cat was playing in the garden. // default value is post between tags
+    </textarea>
+
+Buttons
+    - <button type="submit">Submit</button> - sends the form data to the server
+    - <button type="reset">Reset</button> - resets all form fields; ресетва form, в която е поставен
+    - <button type="button">Button</button> - clickable button; 
+
+Използваме линк - <a>, когато искаме да сменим страницата от Home до Contacts 
+Използваме бутон - <button>, когато имаме интерактивност, изпращане на форма, изскачане на pop-up
+
+
+EXAMPLE: https://codepen.io/snakov/pen/oNYQvpB

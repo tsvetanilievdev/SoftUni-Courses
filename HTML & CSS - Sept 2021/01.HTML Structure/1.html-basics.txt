@@ -77,4 +77,45 @@ HTML Semantic Tags
                 <p>&copy;copyright</p>
             </footer>
 
+    - <section></section> - Represents a standalone section; Typically followed by a heading; MAY have header, several articles, and footer
+            <section>
+                <h2>Heading</h2>
+                <img src="bird.jpg" />
+            </section>
+
+    - <article></article> - Represents a self-contained composition in a document, page, application, or site
+        - Intended to be independently distributable or reusable. Examples:
+            - Forum post
+            - Magazine
+            - Newspaper article
+            - Blog entry
+
+    - <figure></figure> - Represents self-contained content
+        - Frequently with a caption "figcaption"
+        - Typically referenced as a single unit
+            <figure>
+                <img src="pic_trulli.jpg" alt="Trulli">
+                <figcaption>
+                   Fig.1 Trulli, Puglia, Italy.  
+                </figcaption>
+            </figure>
+
+    - <details> + <summary> - 
+        - <details> - additional details that the user can view or hide
+        - <summary> - defines a visible heading for the <details> 
+            <details>
+                <summary>Some details</summary>
+                <p>More info about the details.</p>
+            </details>
+
+    - <time> + <address>
+        - <time> - a human-readable time
+            - Search engines can produce smarter search result
+            <p>We open at <time>10:00</time> every morning.</p>
+        <address> - contact  information for site author / owner
+            - Usually renders in italic
+            <address>
+                <a href="mailto:tony@gmail.com">tony@gmail.com</a>
+            </address>
+
 

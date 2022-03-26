@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>HTML Forms</h3>
+    <form action="" method="post">
+        <label for="firstName">First Name: <input type="text" name="firstName" required></label>
+        <label for="lastName">Last Name: <input type="text" name="lastName"></label>
+        <label for="pass">Password: <input type="password" name="pass"></label>
+        <label for="number">Number: <input type="number" step="2" name="number"></label>
+        <label for="date">Choose date: <input type="date" name="date"></label>
+        <label for="color">Choose color: <input type="color"></label>
+        <input type="submit" value="Send">
+        <button type="reset">Reset</button>
+    </form>
+
+    <h3>New exercise</h3>
+    <form class="form" method="post">
+        <label>First name: <input type="text"></label>
+        <label>Last name: <input type="text" placeholder="Your name"></label>
+        <label>Email: <input type="email"></label>
+        <label>Occupation: <input type="text"></label>
+        <label>Gender: </label>
+        <label for="male">Male: <input type="radio" id="male" name="gender" value="male"></label>
+        <label for="female">Female: <input type="radio" id="female" name="gender" value="female"></label>
+        <label >Age: <input type="number"></label>
+        <hr>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <hr>
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+            <option value="40">40 EU</option>
+            <option value="41">41 EU</option>
+            <option value="42">42 EU</option>
+        </select>
+        <hr>
+        <div>
+            <input type="button" value="Button">
+            <input type="submit" value="Send">
+        </div>
+        <hr>
+        <div>
+            <button type="button">Button</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
