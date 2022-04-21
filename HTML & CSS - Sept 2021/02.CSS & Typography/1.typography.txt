@@ -1,0 +1,32 @@
+What is Typography?
+
+Typography is the art and technique of arranging type to make written language: - legible, readable, appealing - четливост, възприеманост и привлекателност на текста
+Typography is the visual component of the written word
+
+Principles of Readability
+    - Readability is one of the most important aspects of Web design usability
+    - Website readability is a measure of how easy it is for visitors to read and understand online text
+    - Readability depends on both a text's presentation and its context
+    - Poor readability scares readers away from the content
+
+Keys to Readable Typography
+    - User-Friendly Headers 
+    - White Space - scannable and consistent text
+    - Emphasis of Important Elements
+    - Good Margins to avoid walls of text
+    - Scannable Text
+    - Consistency
+    - Organization of Information
+
+Web Safe Fonts
+    - Maximum compatibility between browsers/operating systems
+    - Generic family fonts: Arial, Courier New, Georgia, Times New Roman, Trebuchet MS, Verdana
+
+Font Files
+    - Font files contain one or more fonts that can be accessed by the OS and applications
+    - Most modern fonts are stored in the following formats:
+    - OpenType (.OTF)
+    - TrueType (.TTF)
+    - Web Open Font Format (.WOFF)
+    - Web Open Font Format 2 (.WOFF2)
+

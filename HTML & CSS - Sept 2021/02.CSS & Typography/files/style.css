@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/files/Merriweather/Merriweather-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/files/Merriweather/Merriweather-Light.ttf');
+    font-weight: 300;
+}
+
+p.ar {
+    font-family: Arial, Helvetica;
+}
+
+p.tim {
+    font-family: 'Times New Roman', Times;
+}
+
+p.ext {
+    font-family: Merriweather;
+}
+img.small-img {
+    width: 120px;
+}
+img.normal-img {
+    width: 240px;
+}
+img.weigth-img {
+    width: 340px;
+}
+weigth-img
+p.fstyle {
+    font-style: italic;
+}
+
+p.letter-space {
+    letter-spacing: normal;
+}
+
+p.normal-space {
+    letter-spacing:normal;
+}
+p.letter-space {
+    letter-spacing:2px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+p.text-indent-40px {
+    text-indent: 40px;
+}
+p.customCard {
+    width: 200px;
+    background-color: aqua;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

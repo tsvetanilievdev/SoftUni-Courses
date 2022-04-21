@@ -1,0 +1,72 @@
+CSS FONT PROPERTIES
+
+
+The CSS font proporties styles the font of the text:
+    - font-family / font-face (e.g. sans-serif)
+    - font-size / line-height(височина на шрифта) (e.g. 18pt)
+    - font-weight (e.g. bold) - дебелина
+    - font-style (e.g. italic) - стил
+    - font-variant (e.g. SmallCaps)
+
+
+font-family name specifies one or several system font names:
+    <p class="ar">Arial</p>
+    <p class="tim">Times</p>
+    p.ar {
+    font-family: Arial, Helvetica;
+    }
+
+    p.tim {
+        font-family: 'Times New Roman', Times;
+    }
+    - WHITE SPACE in font name must be surrounded by quoutes
+    - When the first font is missing, the next is loaded
+
+@font-face - using external fonts from external file or URL - look demo.html and style.css
+    - ако един font има много файлове(варианти - Light, italic, bold) - Всички те трябва да се инпортират и да им се зададе font-weight със съответния размер 
+
+Generic Name
+<generic-name> - a broad class of similar fonts used in a prioritized list of fonts - да избираме по семпли!
+    - serif - all characters have stroke endings - по default
+    - sans-serif - no character has stroke endings - предимно се използва
+    - monospace - all characters have the same width
+    - cursive - handwritten fonts
+    - fantasy - decorative fonts
+
+Font-size - defines the text size
+    - px / pt values (e.g. 16px / 12pt) - 1px == 0.75pt == 1/96inch - фиксирана стойност
+    - em values - relative to the original size, multiplied by a SCALE factor - относителна стойност
+    - rem values - relative to the HTML root size (the <html> element) - относителна стойност
+
+Font-weight - defines how weight is the font
+    - Keyword values - such as 'bold' or 'bolder'
+    - Numeric values - from 100 to 900:
+        - 100 is thin, and 900 is bolder
+
+line-height - defines the height of a single line of text - използва се доста при заглавия
+
+Letter Spacing - defines the spacing between the  characters of a block of text - - използва се доста при заглавия
+
+text-decoration - defines how the text content of the element is decorated: overline, underline, line-through
+    - none - removes any text decoration
+    - line-through - draws a line across the text 
+
+text-indent - defines the indentation of the element's first line of text 
+
+text-overflow - defines how the hidden text content behaves if it's overflowing - как текста е изглежда, когаго е прекалено дълъг от мястото с което разполагаме
+
+text-transform - specifies how to capitalize text
+    - capitalize - turns the first letter of each word into a capital letter
+    - uppercase - turns all characters to uppercase
+    - lowercase - turns all characters to lowercase
+
+word-break - defines how words should break when reaching the end of line
+    - normal - words with no space will NOT break
+    - break-all - words with no space will break as soon as they reach the end of a line
+
+
+text-shadow - defines the shadow of the text content
+    - None - the text content has no shadow
+
+white-space - normal, nowrap;
+1:30 ot videoto
