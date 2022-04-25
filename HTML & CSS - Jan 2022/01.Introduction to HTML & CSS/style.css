@@ -1,0 +1,72 @@
+h1 {
+    color: brown;
+}
+
+h3 {
+    color: rgb(3, 5, 148);
+}
+
+
+/* SPECIFICITY */
+/* HTML (h1, p, div) < CLASS (.pItem) < ID (#firstDiv) */
+
+/* HTML Element */
+h2 { /* Selector Specificity: (0, 0, 1) */
+    color: rgb(199, 117, 16);
+}
+
+/* Class - . */
+.pItem { /* Selector Specificity: (0, 1, 0) */
+    color: red;
+}
+
+/* ID - # */ /* Selector Specificity: (1, 0, 0) */
+#firstDiv{
+    background-color: aquamarine;
+}
+
+/* Combining Class and ID */
+#thirdDiv .pItem { /* Selector Specificity: (1, 1, 0)*/
+    color: green;
+}
+/* === with more SPECIFICY - Selector Specificity: (1, 1, 2)
+div#thirdDiv p.pItem {
+    color: green;
+}
+*/
+
+/* or add custom SPECIFICITY 
+
+*/
+
+/* Combining Class and ID */
+#secondDiv img {
+    width: 120px;
+}
+
+
+/* Inline VS Block */
+.pDemo {
+    background-color: chartreuse;
+}
+#pDemo2 {
+    width: 550px;
+}
+
+.spanDemo {
+    background-color: rgb(198, 214, 49);
+}
+#spanDemo2 {
+    width: 200px;
+}
+
+.inlineBlockDemo {
+    display: inline-block;
+    background-color: rgb(223, 135, 53);
+}
+#inlineBlockDemo2 {
+    width: 700px;
+}
+#inlineBlockDemo3 {
+    width: 100px;
+}

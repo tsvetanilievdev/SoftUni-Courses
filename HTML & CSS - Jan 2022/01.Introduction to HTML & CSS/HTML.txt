@@ -1,0 +1,86 @@
+What is HTML?
+    - Markup language for describing web pages
+    - A markup language is a set of markup tags
+    - HTML documents contain HTML tags and plain text
+    - The tags describe document content
+
+
+HTML Tags
+    - Keywords surrounded by angle brackets
+    - Normally come in pairs
+<html>
+    <head>
+        <title>Simple HTML document example</title>
+    </head>
+    <body>
+        <h1>Simple HTML document example</h1>
+    </body>
+</html>
+
+Main HTML Tags
+    - <html></html> - Describes the start and end of the web page/document
+    - <head></head> - Describes the start and end of the metadata section of the document
+    - <body></body> - Describes the start and end of the visible page content
+
+Common HTML Tags
+    - Headings - h1, h2, h3…
+    - Paragraphs - p
+    - Forms - form, fieldset, legend…
+    - Text Formatting - strong, em
+    - Links - a
+    - Images - img
+    - Quotes - cite, blockquote
+    - Lists - ol, ul, dl
+    - Tables - table, thead, tbody, tr, th, td
+
+Tag Attributes
+    - Tags elements can have attributes
+    - Attributes provide additional information about HTML elements
+    - Attributes are always specified in the start tag
+    - Attributes come in name/value pairs 
+
+Tags Examples
+    - Links - <a href="http://initlab.org">init Lab</a>
+    - Images - <img src="/images/icons/terminal.png">
+    - Tables - <table width="100%" cellspacing="0" cellpadding="0">
+
+Metadata Section
+    - The <head> element - a container for all the head elements
+    - Elements inside <head> can:
+        - include scripts
+        - instruct the browser where to find style sheets
+        - provide meta information
+        - and more
+    - The following tags can be added to the head section:
+        - <title>, <style>, <meta>, <link>, <script>, <noscript>
+
+Metadata Example - The <meta> tag provides additional information about the HTML document
+    <!-- Define keywords for search engines: -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!--Define a description of your web page:-->
+    <meta name="description" content="Free Web tutorials">
+    <!--Define the author of a page:-->
+    <meta name="author" content="Hege Refsnes">
+    <!--Refresh document every 30 seconds:-->
+    <meta http-equiv="refresh" content="30">
+
+<Link> - tag defines the relationship between a document and an external resource.
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+    - The <link> tag is most used to link to style sheets
+
+Indentation Example 
+    - Indentation and code formatting is important!
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Login information</legend>
+    
+            <label for="username">Username</label>
+            <p><input type="text" name="usr" id="usr" /></p>
+    
+            <label for="password">Password</label>
+            <p><input type="text" name="pass" id="pass" /></p>
+        </fieldset>
+    </form>
+
