@@ -2,8 +2,12 @@ body {
     background-color: lightgray;
 }
 
+.h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .button {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     border: 1px solid rgb(51, 51, 51);
     border-radius: 12px;
@@ -12,15 +16,23 @@ body {
 
     cursor: pointer;
 }
-.hover:hover {
-    background-color: green;
-}
 
 #normal .button {
     background-color: transparent;
+    color: black;
+}
+#normal .button.hover:hover {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
 }
 
+#filled .button.hover:hover,
+#icons .button.hover:hover {
+    background-color: green;
+}
 #filled .button, #icons .button {
     background-color:rgb(51, 51, 51);
     color: white;
 }
+

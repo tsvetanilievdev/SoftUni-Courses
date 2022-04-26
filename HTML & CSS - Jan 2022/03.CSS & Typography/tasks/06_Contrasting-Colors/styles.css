@@ -1,1 +1,38 @@
 /* TODO: style the html */
+/* You will be given a skeleton with filled HTML and an empty CSS file. Write the missing CSS following the guidelines in the task.
+    •	<body>:
+o	Font: Helvetica
+o	Generic Font: sans-serif
+o	Height of the line: 1.5
+o	Font size: 18px
+o	Background color: white
+    •	<article>:
+o	Margins: 54px
+o	Paddings: 36px
+o	Set the border radius to 16px
+o	Text color: white
+o	Indent text in the first line 40px
+o	Background color: rgb(51, 102, 153)
+    •	<h1>:
+o	Font: Georgia
+o	Generic Font: serif */
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    background-color: white;
+}
+
+article {
+    margin: 54px;
+    padding: 36px;
+    border-radius: 16px;
+    text-indent: 40px;
+    background-color: rgb(51, 102, 153);
+    color: white;
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
