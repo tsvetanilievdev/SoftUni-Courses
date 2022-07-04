@@ -1,0 +1,29 @@
+header, aside, main, footer {
+    background-color: lightblue;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: sidebar;
+}
+main {
+    grid-area: content;
+}
+footer {
+    grid-area: footer;
+}

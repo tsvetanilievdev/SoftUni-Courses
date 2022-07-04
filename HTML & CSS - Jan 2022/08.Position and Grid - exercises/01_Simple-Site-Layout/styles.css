@@ -1,0 +1,54 @@
+header, aside, main, footer {
+    background: rgb(181, 216, 255);
+    border-radius: 3px;
+    padding: 5px 10px; 
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+aside ul li a {
+    display: block;
+    padding: 5px 0px;
+    color: rgb(86, 40, 129);
+    text-decoration: none;
+}
+
+main ul {
+    padding: 22px;
+}
+
+
+body {
+    
+    
+
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "asidebar main"
+    "footer footer";
+    grid-template-columns: 100px auto;
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+}
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+aside {
+    grid-area: asidebar;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}

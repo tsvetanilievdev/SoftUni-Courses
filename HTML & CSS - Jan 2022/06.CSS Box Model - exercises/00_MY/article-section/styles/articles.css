@@ -1,0 +1,86 @@
+#articlesSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 0 calc(64px - 32px) 0;
+}
+#articlesSection .title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 62px;
+}
+.articles li {
+    display: inline-block;
+    width: 30%;
+    margin-right: 4.5%;
+    margin-bottom: 32px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.articles li:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.article {
+    width: 100%;
+}
+/* 2:00 от видеото */
+.article .article__img_wrapper {
+    aspect-ratio: 1/1;
+    border-radius: 21px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.article .article__img_wrapper .article__img {
+    object-fit: cover;
+    border-radius: 21px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.article .article__img_wrapper .article__img:hover {
+    transition: 300ms ease-in;
+    transform: scale(0.9);
+}
+
+.article .article__title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin-bottom: 6px;   
+}
+
+.article .article__desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #808685;
+}
+
+.article__tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.article__tag.tag--attack {
+    background-color: rgb(223, 150, 150);
+    color: darkred;
+}
+
+.article__tag.tag--transition {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.article__tag.tag--defence {
+    background-color: lightblue;
+    color: darkblue;
+}
+

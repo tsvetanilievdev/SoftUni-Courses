@@ -1,0 +1,16 @@
+body {
+    background-color: lightgray;
+}
+
+section {
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+    overflow: auto;
+}
+
+p {
+    text-indent: 30px;
+}

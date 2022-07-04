@@ -1,0 +1,26 @@
+05.Box Model - 
+   - block VS inline VS inline-block element
+   - paddings and margins
+   - Margin Collapsing - само по Х, не при Y --> 2:23
+   - box-sizing --> 2:37
+   - негативни margins and paddings --> 3:03
+
+06. Exercise: Box Model - blog template
+   - анализиране на страница --> 0:16:30
+   - центриране на снимка --> 0:39:20
+   - да направим снимките еднакви - css square div --> 0:53:10 - aspect ratio, div__img__wrapper, object fit 
+   - nth child generator --> 1:38:01
+   - подравняване(центриране по вертикала) с verticle-align: top --> 1:47:20
+   - calc() --> 1:55:00
+   - h1-h6 - css typography --> 2:11:00
+
+07.Position & Grid
+ - position
+ - z-index
+ - float
+ - grid --> 2:56
+ - grid areas --> 3:13
+
+08.Exercise: Position & Grid
+ - центриране на navigation list - transform: transalateY(-50%) --> 0:42
+ - transition --> hover animation --> 0:46

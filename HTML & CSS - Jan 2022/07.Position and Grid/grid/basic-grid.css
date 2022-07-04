@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid__container {
+    display: grid;
+
+    /* grid-template-columns: 300px 300px 300px; */
+    grid-template-columns: repeat(3, 300px);
+
+    /* or mix */
+    /* grid-template-columns: 100px repeat(2, 300px); */
+
+    /* or mix - 100px, 3равни части --->1fr равна част */
+    /* grid-template-columns: 100px repeat(3, 1fr); */
+
+    /* gap:20px; за всички страни*/
+    column-gap: 12px;
+    row-gap: 24px;
+}
+
+.grid__item {
+    background-color: bisque;
+}

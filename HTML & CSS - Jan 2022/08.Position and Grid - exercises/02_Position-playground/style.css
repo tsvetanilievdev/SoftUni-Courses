@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 800px 800px;
+}
+
+
+.viewport {
+    position: relative;
+}
+
+.card {    
+    display: block;
+}
+.first {
+    background-image: linear-gradient(to right, #18599D, #46DAAB);
+}
+
+.second {
+    background-image: linear-gradient(to right, #A83377, #D28212);
+}
+
+.first img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.second img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
