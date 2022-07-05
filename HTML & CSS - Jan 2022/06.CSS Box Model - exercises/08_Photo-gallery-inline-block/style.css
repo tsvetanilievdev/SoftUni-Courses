@@ -17,10 +17,11 @@ li {
     border: 0.4rem solid #000;
     vertical-align: middle;
     margin: 0.5rem;
+    padding: 1rem;
 }
 
 img {
     display: block;
     width: 100%;
     height: auto;
-}
+} 
